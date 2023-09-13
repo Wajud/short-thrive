@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communities</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d5e5c83ca8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-green-700 py-2 px-2 flex justify-between overflow-clip">
+      <input
+        type="text"
+        placeholder="Type here to search"
+        class="w-2/3 text-green-700 placeholder:text-green-700 rounded-md py-1/2 px-2"
+      />
+      <div class="flex gap-2">
+        <i class="fa-solid fa-2x fa-compass" class="text-red-400 w-4 h-4"></i>
+        <i class="fa-solid fa-2x fa-compass" class="text-red-400 w-4 h-4"></i>
+      </div>
+    </header>
+    <section class="px-4">
+      <div
+        class="bg-white my-4 flex flex-wrap justify-between gap-1 py-2 px-2 rounded-md md:hidden"
+      >
+        <div
+          class="flex gap-1 items-center border-2 border-green-700 px-1 py-1 rounded-md"
+        >
+          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <p class="text-green-700 text-xs font-semibold">Consultants</p>
+        </div>
+        <div
+          class="flex gap-1 items-center border-2 border-green-700 px-1 rounded-md"
+        >
+          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <p class="text-green-700 text-xs font-semibold">Trending</p>
+        </div>
+        <div
+          class="flex gap-2 items-center border-2 border-green-700 pl-1 py-1 rounded-md"
+        >
+          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <p class="text-green-700 text-xs font-semibold">Members</p>
+          <p class="text-white bg-green-700 px-1 py-1 text-xs">2500</p>
+        </div>
+      </div>
+
+      <div class="bg-white my-4 flex items-stretch gap-2 py-2 px-2 rounded-md">
+        <i class="fa-solid fa-compass self-center"></i>
+        <input type="text" class="border border-green-100 rounded-md flex-1" />
+        <button class="text-white bg-green-700 px-2 py-1 rounded-md text-sx">
+          Create Post
+        </button>
+      </div>
+
+      <div class="md:flex justify-between gap-4 items-start">
+        <div class="md:order-2">
+          <div
+            class="bg-white md:mt-0 mt-4 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-compass"></i>
+            <p class="flex-1 text-green-700">@chap</p>
+            <i class="fa-solid fa-compass"></i>
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <p
+            class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            accusantium inventore modi dicta est vero quos vel et eligendi
+            adipisci?
+          </p>
+
+          <div
+            class="bg-white mt-4 flex items-center gap-2 py-4 px-2 relative rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-compass"></i>
+            <p class="flex-1 text-green-700">@chap</p>
+            <i class="fa-solid fa-compass"></i>
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <p
+            class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            accusantium inventore modi dicta est vero quos vel et eligendi
+            adipisci?
+          </p>
+
+          <div class="px-[0.5px] bg-black w-0 h-12 ml-20"></div>
+          <div class="py-[0.5px] bg-black w-4 h-0 ml-20"></div>
+
+          <div
+            class="bg-white flex items-center gap-2 py-2 px-4 ml-24 -mt-6 relative rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-compass"></i>
+            <p class="flex-1 text-green-700">@chap</p>
+            <i class="fa-solid fa-compass"></i>
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <p
+            class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-24 rounded-md shadow-md"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            accusantium inventore modi dicta est vero quos vel et eligendi
+            adipisci?
+          </p>
+
+          <div class="px-[0.5px] bg-black w-0 h-12 ml-28"></div>
+          <div class="py-[0.4px] bg-black w-4 h-0 ml-28"></div>
+
+          <div
+            class="bg-white flex items-center gap-2 py-2 px-4 ml-32 -mt-6 relative rounded-md shadow-md"
+          >
+            <i class="fa-solid fa-compass"></i>
+            <p class="flex-1 text-green-700">@chap</p>
+            <i class="fa-solid fa-compass"></i>
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <p
+            class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-32 rounded-md shadow-md"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            accusantium inventore modi dicta est vero quos vel et eligendi
+            adipisci?
+          </p>
+
+          <!--JUST ADDING THIS NOW-->
+
+          <div class="hidden md:block relative">
+            <div
+              class="bg-white hidden md:flex items-center gap-2 py-2 px-4 mt-8 relative rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-compass"></i>
+              <p class="flex-1 text-green-700">@chap</p>
+              <i class="fa-solid fa-compass"></i>
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <p
+              class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              accusantium inventore modi dicta est vero quos vel et eligendi
+              adipisci?
+            </p>
+
+            <div
+              class="px-[0.5px] bg-black w-0 absolute left-16 top-16 h-80 -z-10"
+            ></div>
+            <div
+              class="py-[0.5px] bg-black w-8 absolute left-16 top-52 -z-10"
+            ></div>
+            <div
+              class="py-[0.5px] bg-black w-8 absolute left-16 top-96 -z-10"
+            ></div>
+
+            <div
+              class="bg-white flex items-center gap-2 py-2 px-4 ml-20 mt-8 relative rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-compass"></i>
+              <p class="flex-1 text-green-700">@chap</p>
+              <i class="fa-solid fa-compass"></i>
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <p
+              class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-20 rounded-md shadow-md"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              accusantium inventore modi dicta est vero quos vel et eligendi
+              adipisci?
+            </p>
+
+            <div
+              class="bg-white flex items-center gap-2 py-2 px-4 ml-20 mt-12 relative rounded-md shadow-md"
+            >
+              <i class="fa-solid fa-compass"></i>
+              <p class="flex-1 text-green-700">@chap</p>
+              <i class="fa-solid fa-compass"></i>
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <p
+              class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-20 rounded-md shadow-md"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              accusantium inventore modi dicta est vero quos vel et eligendi
+              adipisci?
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white mt-8 p-4 rounded-md md:order-3 md:mt-0">
+          <h2 class="text-center text-xl mb-4">Consultants</h2>
+
+          <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/AGUUU.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Agu</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/Shomope.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Aisha</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/Wajud.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Wajud</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/Leks.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Salem</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/Peace.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Peace</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <img
+                src="images/Qozeem.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full"
+              />
+              <p>Qozeem</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white px-4 pb-12 mt-8 rounded-md md:w-[660px] md:mt-0 md:order-1"
+        >
+          <h2 class="text-center font-semibold text-green-700 pb-8 pt-4">
+            Trending Topics
+          </h2>
+
+          <div class="grid grid-cols-2 gap-x-4 gap-y-8 overflow-contain">
+            <div class="flex gap-2 justify-start w-fit">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  1
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="font-semibold text-lg">#rest</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  2
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#stress</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  2
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#rest</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  3
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#depression</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  3
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#depression</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  4
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#anxiety</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  4
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#anxiety</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  5
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#wellbeing</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  5
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#wellbeing</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  6
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#fatigue</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  6
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#fatigue</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-start">
+              <div class="relative py-1">
+                <div
+                  class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
+                ></div>
+                <p
+                  class="ml-1 text-xl text-green-700 py-1 px-[12px] bg-white border-2 border-green-700 font-semibold rounded-sm"
+                >
+                  6
+                </p>
+              </div>
+
+              <div class="translate-y-4">
+                <h3 class="text-lg">#fatigue</h3>
+                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white mt-12 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md md:hidden"
+      >
+        <i class="fa-solid fa-compass"></i>
+        <p class="flex-1 text-green-700">@chap</p>
+        <i class="fa-solid fa-compass"></i>
+        <i class="fa-solid fa-compass"></i>
+      </div>
+      <p
+        class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md md:hidden"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium
+        inventore modi dicta est vero quos vel et eligendi adipisci?
+      </p>
+    </section>
+
+    <footer class="md:bg-green-500 mt-8">
+      <div class="flex justify-around bg-green-700 py-4 md:hidden">
+        <i class="fa-solid fa-2x fa-compass"></i>
+        <i class="fa-solid fa-2x fa-compass"></i>
+        <i class="fa-solid fa-2x fa-compass"></i>
+        <i class="fa-solid fa-2x fa-compass"></i>
+      </div>
+
+      <div
+        class="text-white px-8 py-2 hidden md:flex justify-between items-center"
+      >
+        <div>
+          <h2 class="font-semibold">THRIVE</h2>
+          <a href="/" class="block text-sm py-1">About Us</a>
+          <a href="/" class="block text-sm py-1">Contact Us</a>
+          <a href="/" class="block text-sm py-1">Help and Support</a>
+        </div>
+
+        <div>
+          <h2 class="font-semibold">SOCIAL</h2>
+          <a href="/" class="block text-sm py-1">Facebook</a>
+          <a href="/" class="block text-sm py-1">Instagram</a>
+          <a href="/" class="block text-sm py-1">Twitter</a>
+        </div>
+
+        <div>
+          <h2 class="font-semibold">SERVICES</h2>
+          <a href="/" class="block text-sm py-1">Resources</a>
+          <a href="/" class="block text-sm py-1">Relaxation</a>
+          <a href="/" class="block text-sm py-1">Therapy</a>
+        </div>
+
+        <div>
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="mr-0 px-2 py-1 rounded-tl-sm rounded-bl-sm"
+          />
+          <button
+            class="text-white bg-green-700 -ml-4 px-4 py-1 rounded-tr-sm rounded-br-sm"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+      <p class="text-center text-white py-2 hidden md:block">
+        copyright &copy;2023 thrive.techtribe. All right reserved
+      </p>
+    </footer>
+  </body>
+</html>

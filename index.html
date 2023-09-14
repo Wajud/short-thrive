@@ -19,6 +19,10 @@
         .clipPathDesktop {
           clip-path: polygon(49% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
         }
+
+        .triangle {
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
       }
     </style>
   </head>
@@ -134,7 +138,13 @@
       </div>
     </section>
 
-    <footer class="bg-green-600 text-sm">
+    <footer class="bg-green-600 text-sm relative">
+      <div
+        class="hidden absolute bottom-0 right-6 md:flex flex-col items-end w-full"
+      >
+        <div class="triangle w-[25px] h-[12px] bg-white mb-0"></div>
+        <div class="h-[10px] bg-white w-[10px] -mt-[1px] mr-[7.6px]"></div>
+      </div>
       <div class="flex justify-around py-4 md:hidden">
         <i class="fa fa-bars" aria-hidden="true"></i>
         <i class="fa fa-bars" aria-hidden="true"></i>

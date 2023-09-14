@@ -9,6 +9,13 @@
       src="https://kit.fontawesome.com/d5e5c83ca8.js"
       crossorigin="anonymous"
     ></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .triangle {
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
     <header class="bg-green-600 py-2 px-2 flex justify-between overflow-clip">
@@ -582,7 +589,13 @@
       </p>
     </section>
 
-    <footer class="md:bg-green-600 mt-8">
+    <footer class="md:bg-green-600 mt-8 relative">
+      <div
+        class="hidden absolute bottom-0 right-6 md:flex flex-col items-end w-full"
+      >
+        <div class="triangle w-[25px] h-[12px] bg-white mb-0"></div>
+        <div class="h-[10px] bg-white w-[10px] -mt-[1px] mr-[7.6px]"></div>
+      </div>
       <div class="flex justify-around bg-green-700 py-4 md:hidden">
         <i class="fa-solid fa-2x fa-compass"></i>
         <i class="fa-solid fa-2x fa-compass"></i>

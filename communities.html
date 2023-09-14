@@ -55,8 +55,8 @@
         </button>
       </div>
 
-      <div class="md:flex justify-between gap-4 items-start">
-        <div class="md:order-2">
+      <div class="md:grid md:grid-cols-7 justify-between gap-4 items-start">
+        <div class="md:order-2 md:col-start-3 md:col-end-6">
           <div
             class="bg-white md:mt-0 mt-4 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md"
           >
@@ -190,68 +190,167 @@
           </div>
         </div>
 
-        <div class="bg-white mt-8 p-4 rounded-md md:order-3 md:mt-0">
-          <h2 class="text-center text-xl mb-4">Consultants</h2>
+        <div
+          class="md:order-3 md:mt-0 md:flex flex-col md:col-start-6 md:col-end-8"
+        >
+          <div
+            class="hidden md:flex justify-between px-2 py-1 bg-white rounded-md mb-1"
+          >
+            <p>Chap</p>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="bg-white mt-8 md:mt-2 p-4 rounded-md">
+            <h2 class="text-center text-xl mb-4">Consultants</h2>
 
-          <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/AGUUU.jpeg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Agu</p>
+            <div
+              class="grid grid-cols-3 md:grid-cols-3 gap-2 md:justify-around"
+            >
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/AGUUU.jpeg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Agu</p>
+              </div>
+
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/Shomope.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Aisha</p>
+              </div>
+
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/Wajud.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Wajud</p>
+              </div>
+
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/Leks.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Salem</p>
+              </div>
+
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/Peace.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Peace</p>
+              </div>
+
+              <div class="flex flex-col justify-center items-center gap-2">
+                <img
+                  src="images/Qozeem.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-full"
+                />
+                <p>Qozeem</p>
+              </div>
             </div>
+          </div>
 
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/Shomope.jpg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Aisha</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/Wajud.jpg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Wajud</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/Leks.jpg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Salem</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/Peace.jpg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Peace</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center gap-2">
-              <img
-                src="images/Qozeem.jpg"
-                alt=""
-                class="w-20 h-20 rounded-full"
-              />
-              <p>Qozeem</p>
+          <div class="py-2 hidden md:block bg-white mt-4 rounded-md">
+            <p class="px-4 py-[2px]">3000 Members</p>
+            <div class="w-full h-[1px] bg-green-50"></div>
+            <div class="pt-2 pb-4 px-4 flex flex-col gap-4 justify-center">
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>TJ</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>HT</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>MM</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>SJ</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>AQ</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>FFK</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>BAT</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>RP</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>NA</p>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
+                >
+                  <i class="fa-regular fa-user rounded-full"></i>
+                </div>
+                <p>Che</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div
-          class="bg-white px-4 pb-12 mt-8 rounded-md md:w-[660px] md:mt-0 md:order-1"
+          class="bg-white px-4 pb-12 mt-8 rounded-md md:col-start-1 md:col-end-3 md:mt-0 md:order-1"
         >
           <h2 class="text-center font-semibold text-green-700 pb-8 pt-4">
             Trending Topics
@@ -483,7 +582,7 @@
       </p>
     </section>
 
-    <footer class="md:bg-green-500 mt-8">
+    <footer class="md:bg-green-600 mt-8">
       <div class="flex justify-around bg-green-700 py-4 md:hidden">
         <i class="fa-solid fa-2x fa-compass"></i>
         <i class="fa-solid fa-2x fa-compass"></i>

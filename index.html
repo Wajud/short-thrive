@@ -19,15 +19,11 @@
         .clipPathDesktop {
           clip-path: polygon(49% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
         }
-
-        .triangle {
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        }
       }
     </style>
   </head>
   <body class="bg-gray-50">
-    <header class="py-2 bg-green-600">
+    <header class="py-2 bg-[#2A3D19]">
       <div class="flex justify-between items-center px-4 md:hidden">
         <img src="images/Chevron Left.png" alt="" class="w-[16px] h-[12px]" />
         <img src="images/Menu.png" alt="" class="w-[16px] h-[18px]" />
@@ -62,10 +58,10 @@
 
     <section class="relative pb-28">
       <div
-        class="absolute top-12 bottom-48 w-full bg-green-600 -z-10 clipPathMobile md:hidden"
+        class="absolute top-12 bottom-48 w-full bg-[#4D732A] -z-10 clipPathMobile md:hidden"
       ></div>
       <div
-        class="absolute top-20 bottom-[1px] w-full bg-green-600 -z-10 clipPathDesktop hidden md:block"
+        class="absolute top-20 bottom-[1px] w-full bg-[#4D732A] -z-10 clipPathDesktop hidden md:block"
       ></div>
 
       <div
@@ -138,14 +134,13 @@
       </div>
     </section>
 
-    <footer class="bg-green-600 text-sm relative">
+    <footer class="bg-[#2A3D19] relative py-4">
       <div
         class="hidden absolute bottom-0 right-6 md:flex flex-col items-end w-full"
       >
-        <div class="triangle w-[25px] h-[12px] bg-white mb-0"></div>
-        <div class="h-[10px] bg-white w-[10px] -mt-[1px] mr-[7.6px]"></div>
+        <img src="images/triangle.png" alt="triangle" class="w-8 h-12" />
       </div>
-      <div class="flex justify-around py-2 md:hidden">
+      <div class="flex justify-around bg-[#2A3D19] md:hidden">
         <img src="images/Home.png" alt="home" class="w-[25px] h-[30px]" />
         <img
           src="images/resoureces-light.png"
@@ -166,24 +161,24 @@
       </div>
 
       <div
-        class="text-white px-12 pt-4 py-2 hidden md:flex justify-between items-center"
+        class="text-white px-8 py-2 hidden md:flex justify-between items-center"
       >
         <div>
-          <h2 class="font-semibold mb-4">THRIVE</h2>
+          <h2 class="font-semibold">THRIVE</h2>
           <a href="/" class="block text-sm py-1">About Us</a>
           <a href="/" class="block text-sm py-1">Contact Us</a>
           <a href="/" class="block text-sm py-1">Help and Support</a>
         </div>
 
         <div>
-          <h2 class="font-semibold mb-4">SOCIAL</h2>
+          <h2 class="font-semibold">SOCIAL</h2>
           <a href="/" class="block text-sm py-1">Facebook</a>
           <a href="/" class="block text-sm py-1">Instagram</a>
           <a href="/" class="block text-sm py-1">Twitter</a>
         </div>
 
         <div>
-          <h2 class="font-semibold mb-4">SERVICES</h2>
+          <h2 class="font-semibold">SERVICES</h2>
           <a href="/" class="block text-sm py-1">Resources</a>
           <a href="https://thrive-kappa.vercel.app/" class="block text-sm py-1"
             >Relaxation</a

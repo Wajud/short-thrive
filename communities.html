@@ -21,11 +21,16 @@
     <header
       class="bg-green-600 py-2 px-2 md:px-12 flex justify-between overflow-clip"
     >
+    <div class="w-2/3 md:w-1/2 relative">
       <input
         type="text"
         placeholder="Type here to search"
-        class="w-2/3 md:w-1/2 text-green-600 placeholder:text-green-700 rounded-md py-1/2 px-2"
+        class="inline-block w-full text-green-600 placeholder:text-green-700 rounded-md py-1/2 px-2"
       />
+
+      <img src="images/Search Icon.png" alt="search icon" class="w-4 h-4 absolute top-1 right-4">
+    </div>
+      
       <div class="flex gap-2 items-center md:hidden">
         <img
           src="images/community-light-sm.png"
@@ -194,55 +199,60 @@
             </div>
 
             <div
-              class="px-[0.5px] bg-black w-0 absolute left-16 top-48 h-96 -z-10"
+              class="px-[0.5px] bg-black w-0 absolute left-16 top-48 h-44 -z-10"
             ></div>
             <div
-              class="py-[0.5px] bg-black w-12 absolute left-16 top-96 -z-10"
+              class="py-[0.5px] bg-black w-12 absolute left-16 top-72 -z-10"
             ></div>
             <div
-              class="py-[0.5px] bg-black w-12 absolute left-16 bottom-24 -z-10"
+              class="py-[0.5px] bg-black w-12 absolute left-16 bottom-4 -z-10"
             ></div>
 
             <div
               class="flex ml-20 mt-8"
             >
 
-              <div class="flex px-1 py-1 justify-between gap-4 shadow-md bg-white rounded-md">
-                <div class="flex gap-2 items-center">
+              <div class="flex justify-between gap-4 bg-white rounded-md shadow-md">
+                <div class="flex gap-2 items-center bg-white px-2 py-1 rounded-tr-md rounded-md shadow-md">
                   <img src="images/jf.png" alt="js" class="w-4 h-4">
-                  <p>@user</p>
-                </div>
-                <div class="flex gap-2 items-center -mr-6 z-10">
+                  <p classs="flex-1">@user</p>
+               
                   <img src="images/message.png" alt="message" class="w-4 h-4">
+       
                   <img src="images/like.png" alt="like" class="w-4 h-4">
+                  
                 </div>
+                <p>
+                  I can absolutely relate. I've been there before
+                </p>
               </div>
-
-              <p
-              class="bg-white -z-10 flex items-center gap-2 py-2 pl-6 pr-2 rounded-tr-md rounded-br-md shadow-md"
-            >
-              I can absolutely relate. I've been there before
-            </p>
               
               
             </div>
-            
-
             <div
-              class="bg-white flex items-center gap-2 py-2 px-4 ml-20 mt-12 relative rounded-md shadow-md"
+              class="flex ml-20 mt-8"
             >
-              <i class="fa-solid fa-compass"></i>
-              <p class="flex-1 text-green-700">@chap</p>
-              <i class="fa-solid fa-compass"></i>
-              <i class="fa-solid fa-compass"></i>
+
+              <div class="flex justify-between gap-4 bg-white rounded-md shadow-md">
+                <div class="flex gap-2 items-center bg-white px-2 py-1 rounded-tr-md rounded-md shadow-md">
+                  <img src="images/jf.png" alt="js" class="w-4 h-4">
+                  <p classs="flex-1">@user</p>
+               
+                  <img src="images/message.png" alt="message" class="w-4 h-4">
+       
+                  <img src="images/like.png" alt="like" class="w-4 h-4">
+                  
+                </div>
+                <p>
+                  I can absolutely relate. I've been there before
+                </p>
+              </div>
+              
+              
             </div>
-            <p
-              class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-20 rounded-md shadow-md"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              accusantium inventore modi dicta est vero quos vel et eligendi
-              adipisci?
-            </p>
+         
+
+           
           </div>
         </div>
 
@@ -250,10 +260,10 @@
           class="md:order-3 md:mt-0 md:flex flex-col md:col-start-6 md:col-end-8"
         >
           <div
-            class="hidden md:flex justify-between px-2 py-1 bg-white rounded-md mb-1"
+            class="hidden md:flex justify-between px-4 py-[6px] bg-white rounded-md mb-1"
           >
             <p>Chap</p>
-            <i class="fa-regular fa-user"></i>
+            <img src="images/chap.png" alt="chap" class="w-6 h-6">
           </div>
           <div class="bg-white mt-8 md:mt-2 p-4 rounded-md">
             <h2 class="text-center text-xl mb-4">Consultants</h2>
@@ -322,83 +332,43 @@
             <div class="w-full h-[1px] bg-green-50"></div>
             <div class="pt-2 pb-4 px-4 flex flex-col gap-4 justify-center">
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/tj.png" alt="tj" class="w-6 h-6">
                 <p>TJ</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/ht.png" alt="ht" class="w-6 h-6">
                 <p>HT</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/mm.png" alt="mm" class="w-6 h-6">
                 <p>MM</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/sj.png" alt="sj" class="w-6 h-6">
                 <p>SJ</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/ht.png" alt="ht" class="w-6 h-6">
                 <p>AQ</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/ffk.png" alt="ffk" class="w-6 h-6">
                 <p>FFK</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/jf.png" alt="bat" class="w-6 h-6">
                 <p>BAT</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/ht.png" alt="ht" class="w-6 h-6">
                 <p>RP</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/ffk.png" alt="na" class="w-6 h-6">
                 <p>NA</p>
               </div>
               <div class="flex gap-4 items-center">
-                <div
-                  class="w-[30px] h-[30px] rounded-full bg-gray-100 flex justify-center items-center"
-                >
-                  <i class="fa-regular fa-user rounded-full"></i>
-                </div>
+                <img src="images/che.png" alt="che" class="w-6 h-6 rounded-full">
                 <p>Che</p>
               </div>
             </div>

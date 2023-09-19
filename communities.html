@@ -18,16 +18,32 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <header class="bg-green-600 py-2 px-2 flex justify-between overflow-clip">
+    <header
+      class="bg-green-600 py-2 px-2 md:px-12 flex justify-between overflow-clip"
+    >
       <input
         type="text"
         placeholder="Type here to search"
-        class="w-2/3 text-green-600 placeholder:text-green-700 rounded-md py-1/2 px-2"
+        class="w-2/3 md:w-1/2 text-green-600 placeholder:text-green-700 rounded-md py-1/2 px-2"
       />
-      <div class="flex gap-2">
-        <i class="fa-solid fa-2x fa-compass" class="text-red-400 w-4 h-4"></i>
-        <i class="fa-solid fa-2x fa-compass" class="text-red-400 w-4 h-4"></i>
+      <div class="flex gap-2 items-center md:hidden">
+        <img
+          src="images/community-light-sm.png"
+          alt="profile-light"
+          class="w-4 h-4"
+        />
+        <img
+          src="images/profile-image.png"
+          alt="profile-image"
+          class="w-6 h-6"
+        />
       </div>
+      <ul class="hidden md:flex gap-4 text-white text-sm">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Community</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
     </header>
     <section class="px-4">
       <div
@@ -36,41 +52,60 @@
         <div
           class="flex gap-1 items-center border-2 border-green-600 px-1 py-1 rounded-md"
         >
-          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <img src="images/members.png" alt="" class="w-4 h-4" />
           <p class="text-green-600 text-sm font-semibold">Consultants</p>
         </div>
         <div
           class="flex gap-1 items-center border-2 border-green-600 px-1 rounded-md"
         >
-          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <img src="images/trending.png" alt="" />
           <p class="text-green-700 text-sm font-semibold">Trending</p>
         </div>
         <div
           class="flex gap-2 items-center border-2 border-green-600 pl-1 py-1 rounded-md"
         >
-          <i class="fa-solid fa-compass" class="text-red-400 h-4"></i>
+          <img src="images/members.png" alt="" />
           <p class="text-green-600 text-sm font-semibold">Members</p>
           <p class="text-white bg-green-600 px-1 py-1 text-xs">2500</p>
         </div>
       </div>
 
-      <div class="bg-white my-4 flex items-stretch gap-2 py-2 px-2 rounded-md">
-        <i class="fa-solid fa-compass self-center"></i>
+      <div
+        class="bg-white my-4 flex items-center gap-2 py-2 px-2 rounded-md md:hidden"
+      >
+        <img src="images/chap.png" alt="chap" class="w-6 h-6" />
         <input type="text" class="border border-green-100 rounded-md flex-1" />
-        <button class="text-white bg-green-700 px-2 py-1 rounded-md text-sm">
+        <button class="text-white bg-green-700 px-2 py-1 rounded-md text-xs">
           Create Post
         </button>
       </div>
 
-      <div class="md:grid md:grid-cols-7 justify-between gap-4 items-start">
+      <div
+        class="md:grid md:grid-cols-7 justify-between gap-4 items-start md:py-8"
+      >
         <div class="md:order-2 md:col-start-3 md:col-end-6">
+          <div
+            class="bg-white mb-4 md:flex items-center gap-2 py-2 px-2 rounded-md hidden"
+          >
+            <img src="images/chap.png" alt="chap" class="w-6 h-6" />
+            <input
+              type="text"
+              class="border border-green-100 rounded-md flex-1"
+            />
+            <button
+              class="text-white bg-green-700 px-2 py-1 rounded-md text-xs"
+            >
+              Create Post
+            </button>
+          </div>
+
           <div
             class="bg-white md:mt-0 mt-4 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md"
           >
-            <i class="fa-solid fa-compass"></i>
+            <img src="images/chap.png" alt="chap" class="w-6 h-6" />
             <p class="flex-1 text-green-700">@chap</p>
-            <i class="fa-solid fa-compass"></i>
-            <i class="fa-solid fa-compass"></i>
+            <img src="images/message.png" alt="message" class="w-4 h-4" />
+            <img src="images/like.png" alt="like" class="w-4 h-4" />
           </div>
           <p
             class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
@@ -83,10 +118,10 @@
           <div
             class="bg-white mt-4 flex items-center gap-2 py-4 px-2 relative rounded-md shadow-md"
           >
-            <i class="fa-solid fa-compass"></i>
-            <p class="flex-1 text-green-700">@chap</p>
-            <i class="fa-solid fa-compass"></i>
-            <i class="fa-solid fa-compass"></i>
+            <img src="images/jf.png" alt="jf" class="w-6 h-6" />
+            <p class="flex-1 text-green-700">@JF</p>
+            <img src="images/message.png" alt="message" class="w-4 h-4" />
+            <img src="images/like.png" alt="like" class="w-4 h-4" />
           </div>
           <p
             class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
@@ -102,10 +137,10 @@
           <div
             class="bg-white flex items-center gap-2 py-2 px-4 ml-24 -mt-6 relative rounded-md shadow-md"
           >
-            <i class="fa-solid fa-compass"></i>
-            <p class="flex-1 text-green-700">@chap</p>
-            <i class="fa-solid fa-compass"></i>
-            <i class="fa-solid fa-compass"></i>
+            <img src="images/mp.png" alt="mp" class="w-6 h-6" />
+            <p class="flex-1 text-green-700">@Mp</p>
+            <img src="images/message.png" alt="message" class="w-4 h-4" />
+            <img src="images/like.png" alt="like" class="w-4 h-4" />
           </div>
           <p
             class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-24 rounded-md shadow-md"
@@ -121,10 +156,10 @@
           <div
             class="bg-white flex items-center gap-2 py-2 px-4 ml-32 -mt-6 relative rounded-md shadow-md"
           >
-            <i class="fa-solid fa-compass"></i>
-            <p class="flex-1 text-green-700">@chap</p>
-            <i class="fa-solid fa-compass"></i>
-            <i class="fa-solid fa-compass"></i>
+            <img src="images/mp.png" alt="mp" class="w-6 h-6" />
+            <p class="flex-1 text-green-700">@Mp</p>
+            <img src="images/message.png" alt="message" class="w-4 h-4" />
+            <img src="images/like.png" alt="like" class="w-4 h-4" />
           </div>
           <p
             class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-32 rounded-md shadow-md"
@@ -140,10 +175,10 @@
             <div
               class="bg-white hidden md:flex items-center gap-2 py-2 px-4 mt-8 relative rounded-md shadow-md"
             >
-              <i class="fa-solid fa-compass"></i>
-              <p class="flex-1 text-green-700">@chap</p>
-              <i class="fa-solid fa-compass"></i>
-              <i class="fa-solid fa-compass"></i>
+            <img src="images/chap.png" alt="chap" class="w-6 h-6" />
+            <p class="">@WJD</p>
+            <p class="font-semibold pl-4">Understanding Depression: Navigating The Shadows</p>
+            
             </div>
             <p
               class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md"
@@ -153,31 +188,45 @@
               adipisci?
             </p>
 
+            <div class="flex gap-2 shadow-md px-4 bg-white pt-16 pb-2 rounded-md -mt-12">
+              <img src="images/like.png" alt="like" class="w-4 h-4">
+              <img src="images/message.png" alt="message" class="w-4 h-4">
+            </div>
+
             <div
-              class="px-[0.5px] bg-black w-0 absolute left-16 top-16 h-80 -z-10"
+              class="px-[0.5px] bg-black w-0 absolute left-16 top-48 h-96 -z-10"
             ></div>
             <div
-              class="py-[0.5px] bg-black w-8 absolute left-16 top-52 -z-10"
+              class="py-[0.5px] bg-black w-12 absolute left-16 top-96 -z-10"
             ></div>
             <div
-              class="py-[0.5px] bg-black w-8 absolute left-16 top-96 -z-10"
+              class="py-[0.5px] bg-black w-12 absolute left-16 bottom-24 -z-10"
             ></div>
 
             <div
-              class="bg-white flex items-center gap-2 py-2 px-4 ml-20 mt-8 relative rounded-md shadow-md"
+              class="flex ml-20 mt-8"
             >
-              <i class="fa-solid fa-compass"></i>
-              <p class="flex-1 text-green-700">@chap</p>
-              <i class="fa-solid fa-compass"></i>
-              <i class="fa-solid fa-compass"></i>
-            </div>
-            <p
-              class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 ml-20 rounded-md shadow-md"
+
+              <div class="flex px-1 py-1 justify-between gap-4 shadow-md bg-white rounded-md">
+                <div class="flex gap-2 items-center">
+                  <img src="images/jf.png" alt="js" class="w-4 h-4">
+                  <p>@user</p>
+                </div>
+                <div class="flex gap-2 items-center -mr-6 z-10">
+                  <img src="images/message.png" alt="message" class="w-4 h-4">
+                  <img src="images/like.png" alt="like" class="w-4 h-4">
+                </div>
+              </div>
+
+              <p
+              class="bg-white -z-10 flex items-center gap-2 py-2 pl-6 pr-2 rounded-tr-md rounded-br-md shadow-md"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              accusantium inventore modi dicta est vero quos vel et eligendi
-              adipisci?
+              I can absolutely relate. I've been there before
             </p>
+              
+              
+            </div>
+            
 
             <div
               class="bg-white flex items-center gap-2 py-2 px-4 ml-20 mt-12 relative rounded-md shadow-md"
@@ -357,13 +406,13 @@
         </div>
 
         <div
-          class="bg-white px-4 pb-12 mt-8 rounded-md md:col-start-1 md:col-end-3 md:mt-0 md:order-1"
+          class="bg-white px-4 md:pr-8 pb-12 mt-8 rounded-md md:col-start-1 md:col-end-3 md:mt-0 md:order-1"
         >
-          <h2 class="text-center font-semibold text-green-700 pb-8 pt-4">
+          <h2 class="text-center md:text-left font-semibold text-green-700 pb-8 md:pb-6 pt-4">
             Trending Topics
           </h2>
 
-          <div class="grid grid-cols-2 gap-x-4 gap-y-8 overflow-contain">
+          <div class="grid grid-cols-2 md:grid-cols-1 gap-x-4 gap-y-8">
             <div class="flex gap-2 justify-start w-fit">
               <div class="relative py-1">
                 <div
@@ -393,12 +442,17 @@
                 </p>
               </div>
 
-              <div class="translate-y-4">
-                <h3 class="text-lg">#stress</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+              <div class="translate-y-2">
+                <h3 class="text-lg -mb-2">#stress</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  2,300 Posted <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -411,8 +465,13 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#rest</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#stress</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  2,300 Posted <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
             <div class="flex gap-2 justify-start">
@@ -428,11 +487,16 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#depression</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#depression</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  2,000 Posted <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -445,8 +509,13 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#depression</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#depression</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  2,000 Posted <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
             <div class="flex gap-2 justify-start">
@@ -462,11 +531,16 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#anxiety</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#anxiety</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  1,600 Posted <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -480,10 +554,17 @@
 
               <div class="translate-y-4">
                 <h3 class="text-lg">#anxiety</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <div class="text-xs font-semibold">
+                  <p>
+                  1,600 Posted by this tag
+                </p>
+                 
+                </div>
               </div>
             </div>
-
+           
+           
+  
             <div class="flex gap-2 justify-start">
               <div class="relative py-1">
                 <div
@@ -497,11 +578,16 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#wellbeing</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#wellbeing</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  1,100 <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -514,10 +600,16 @@
               </div>
 
               <div class="translate-y-4">
-                <h3 class="text-lg">#wellbeing</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <h3 class="text-lg -mb-[10px]">#wellbeing</h3>
+                <div class="text-xs font-semibold">
+                  <p>
+                  1,100 <span  class="font-bold text-2xl">.</span> Trending</p>
+                </p>
+                 
+                </div>
               </div>
             </div>
+          
             <div class="flex gap-2 justify-start">
               <div class="relative py-1">
                 <div
@@ -532,10 +624,10 @@
 
               <div class="translate-y-4">
                 <h3 class="text-lg">#fatigue</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <p class="text-xs font-semibold">700 Posted by this tag</p>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -549,10 +641,10 @@
 
               <div class="translate-y-4">
                 <h3 class="text-lg">#fatigue</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <p class="text-xs font-semibold">700 Posted by this tag</p>
               </div>
             </div>
-            <div class="flex gap-2 justify-start">
+            <div class="flex md:hidden gap-2 justify-start">
               <div class="relative py-1">
                 <div
                   class="absolute top-2 h-10 w-[98%] border-l-2 border-b-2 border-l-green-700 border-b-green-700 rounded-sm p-2"
@@ -566,7 +658,7 @@
 
               <div class="translate-y-4">
                 <h3 class="text-lg">#fatigue</h3>
-                <p class="text-xs font-semibold">2,500 Posted by this tag</p>
+                <p class="text-xs font-semibold">700 Posted by this tag</p>
               </div>
             </div>
           </div>
@@ -576,10 +668,10 @@
       <div
         class="bg-white mt-12 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md md:hidden"
       >
-        <i class="fa-solid fa-compass"></i>
+        <img src="images/chap.png" alt="chap" class="w-6 h-6" />
         <p class="flex-1 text-green-700">@chap</p>
-        <i class="fa-solid fa-compass"></i>
-        <i class="fa-solid fa-compass"></i>
+        <img src="images/message.png" alt="message" class="w-4 h-4" />
+        <img src="images/like.png" alt="like" class="w-4 h-4" />
       </div>
       <p
         class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-2 px-4 rounded-md shadow-md md:hidden"
@@ -597,10 +689,23 @@
         <div class="h-[10px] bg-white w-[10px] -mt-[1px] mr-[7.6px]"></div>
       </div>
       <div class="flex justify-around bg-green-700 py-4 md:hidden">
-        <i class="fa-solid fa-2x fa-compass"></i>
-        <i class="fa-solid fa-2x fa-compass"></i>
-        <i class="fa-solid fa-2x fa-compass"></i>
-        <i class="fa-solid fa-2x fa-compass"></i>
+        <img src="images/Home.png" alt="home" class="w-[25px] h-[30px]" />
+        <img
+          src="images/resoureces-light.png"
+          alt="resources"
+          class="w-[25px] h-[30px]"
+        />
+        <img
+          src="images/community-light-sm.png"
+          alt="community-sm"
+          class="w-[25px] h-[30px]"
+        />
+        <img
+          src="images/therapy-light.png"
+          alt="therapy-light"
+          class="w-[25px] h-[30px]"
+        />
+        <img src="images/profile-light.png" alt="" class="w-[25px] h-[30px]" />
       </div>
 
       <div

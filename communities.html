@@ -11,7 +11,7 @@
     ></script>
   </head>
   <body class="bg-gray-100">
-    <header
+    <!-- <header
       class="bg-[#2A3D19] py-4 px-4 md:px-12 flex justify-between items-center overflow-clip"
     >
     <div class="w-2/3 md:w-1/2 relative">
@@ -42,7 +42,48 @@
         <li><a href="">Community</a></li>
         <li><a href="">Contact Us</a></li>
       </ul>
+    </header> -->
+
+    <!-- General Header -->
+
+    <header id="header" class="bg-[#2A3D19] flex justify-between px-8">
+      <div id="thriveLogo" class="inline-block w-14 h-14">
+        <img
+          src="images/thrive-logo.png"
+          alt="Thrive logo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div>
+        <ul class="flex space-x-6 pt-4 text-slate-100">
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">
+            <a href="https://about-us-swart.vercel.app/">About</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="https://my-tiidelab-repo-ge9z-tijesurejoice.vercel.app/"
+              >Therapy</a
+            >
+          </li>
+          <li class="cursor-pointer">
+            <a href="index.html">Community</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="https://sign-up-thrive.vercel.app/">Sign up</a>
+          </li>
+          <li class="cursor-pointer">
+            <span class="searchIcon"
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #ffffff"
+              ></i
+            ></span>
+          </li>
+        </ul>
+      </div>
     </header>
+
+    <!-- End of Header -->
     <section class="px-4">
       <div
         class="bg-white my-4 flex flex-wrap justify-between gap-1 py-2 px-2 rounded-md md:hidden"
@@ -756,7 +797,7 @@
       </p>
     </section>
 
-    <footer class="bg-[#2A3D19] mt-8 relative py-4">
+    <!-- <footer class="bg-[#2A3D19] mt-8 relative py-4">
       <div
         class="hidden absolute bottom-0 right-6 md:flex flex-col items-end w-full"
       >
@@ -829,6 +870,76 @@
       <p class="text-center text-white py-2 hidden md:block">
         copyright &copy;2023 thrive.techtribe. All right reserved
       </p>
+    </footer> -->
+
+    <!-- General Footer -->
+
+    <footer
+      class="w-full bg-[#2A3D19] text-slate-100 px-20 py-5 flex flex-col items-center"
+    >
+      <div class="w-full flex items-center justify-evenly mb-2">
+        <div>
+          <span class="text-2xl font-body_text font-medium">Thrive</span>
+          <ul>
+            <li class="font-body_text font-medium"><a href="#">About Us</a></li>
+            <li class="font-body_text font-medium">
+              <a href="https://help-and-support.vercel.app/">Contact Us</a>
+            </li>
+            <li class="font-body_text font-medium">
+              <a href="https://help-and-support.vercel.app/">Help & Support</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-xl font-body_text font-medium">Social</span>
+          <ul>
+            <li class="font-body_text font-medium">Facebook</li>
+            <li class="font-body_text font-medium">Instagram</li>
+            <li class="font-body_text font-medium">Twitter</li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-2xl font-body_text font-medium">Services</span>
+          <ul>
+            <li class="font-body_text font-medium">
+              <a href="#">Resources</a>
+            </li>
+            <li class="font-body_text font-medium">
+              <a href="https://thrive-relaxation-pages-frames-1-23.vercel.app/"
+                >Relaxation</a
+              >
+            </li>
+            <li class="font-body_text font-medium">
+              <a href="https://my-tiidelab-repo-ge9z-tijesurejoice.vercel.app/"
+                >Therapy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex items-center justify-center font-body_text font-medium"
+        >
+          <input
+            class="p-1 rounded-l-sm"
+            type="text"
+            placeholder="Email Address"
+          />
+          <button
+            class="rounded-r-sm bg-button px-2 py-1.5 outline-none font-body_text font-semibold"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="w-full flex relative items-end justify-center">
+        <span class="text-center text-sm font-body_text font-medium"
+          >copyright&copy; 2023 thrive.techtribe all right reserved.</span
+        >
+        <a class="absolute right-0 cursor-pointer" href="#hero">
+          <img src="images/triangle.png" alt="scroll up" />
+        </a>
+      </div>
     </footer>
+  
   </body>
 </html>

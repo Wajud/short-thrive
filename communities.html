@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/d5e5c83ca8.js"
       crossorigin="anonymous"
     ></script>
+  
   </head>
   <body class="bg-gray-100">
     <!-- <header
@@ -113,8 +114,8 @@
         class="bg-white my-4 flex items-center gap-2 py-2 px-2 rounded-md md:hidden"
       >
         <img src="images/chap.png" alt="chap" class="w-6 h-6" />
-        <input type="text" class="border border-green-100 rounded-md flex-1" />
-        <button class="text-white bg-green-700 px-2 py-1 rounded-md text-xs">
+        <input type="text" class="border border-green-100 rounded-md flex-1 created-post" />
+        <button class="text-white bg-[#295700] px-2 py-1 rounded-md text-xs post" >
           Create Post
         </button>
       </div>
@@ -129,28 +130,35 @@
             <img src="images/chap.png" alt="chap" class="w-6 h-6" />
             <input
               type="text"
-              class="border border-green-100 rounded-md flex-1"
+              class="border border-green-100 rounded-md flex-1 created-post" 
             />
             <button
-              class="text-white bg-[#295700] px-2 py-1 rounded-md text-xs"
+              class="text-white bg-[#295700] px-2 py-1 rounded-md text-xs post"
             >
               Create Post
             </button>
           </div>
 
-          <div
-            class="bg-white md:mt-0 mt-4 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md"
-          >
-            <img src="images/chap.png" alt="chap" class="w-6 h-6" />
-            <p class="flex-1 text-green-700">@chap</p>
-            <img src="images/message.png" alt="message" class="w-4 h-4" />
-            <img src="images/like.png" alt="like" class="w-4 h-4" />
-          </div>
-          <p
-            class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-4 px-6 rounded-md shadow-md"
-          >
-          In our hectic lives, the essence of rest and relaxation is often overlooked. Yet, these moments of respite hold immense value. Rest revitalizes our bodies, while relaxation rejuvenates our minds. Together, they reduce stress, enhance productivity, improve sleep, and promote overall well-being. Simple practices like deep breathing, mindfulness, nature walks, and quality sleep can easily be incorporated into daily routines. By embracing these practices, we gift ourselves the chance for better health and a more balanced life.
-          </p>
+          <section id="top-post">
+            <div>
+              <div
+                class="bg-white md:mt-0 mt-4 flex items-center gap-2 py-2 px-4 relative rounded-md shadow-md"
+              >
+                <img src="images/chap.png" alt="chap" class="w-6 h-6" />
+                <p class="flex-1 text-green-700">@chap</p>
+                <img src="images/message.png" alt="message" class="w-4 h-4" />
+                <img src="images/like.png" alt="like" class="w-4 h-4" />
+              </div>
+              <p
+                class="bg-white -mt-4 -z-10 flex items-center gap-2 pt-8 pb-4 px-6 rounded-md shadow-md"
+              >
+              See In our hectic lives, the essence of rest and relaxation is often overlooked. Yet, these moments of respite hold immense value. Rest revitalizes our bodies, while relaxation rejuvenates our minds. Together, they reduce stress, enhance productivity, improve sleep, and promote overall well-being. Simple practices like deep breathing, mindfulness, nature walks, and quality sleep can easily be incorporated into daily routines. By embracing these practices, we gift ourselves the chance for better health and a more balanced life.
+              </p>
+            </div>
+            
+          </section>
+
+         
 
           <div class="hidden md:block relative">
 
@@ -940,6 +948,10 @@
         </a>
       </div>
     </footer>
+
+
+
+    <script src="main.js"></script>
   
   </body>
 </html>

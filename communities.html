@@ -9,82 +9,133 @@
       src="https://kit.fontawesome.com/d5e5c83ca8.js"
       crossorigin="anonymous"
     ></script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .slide-in {
+          animation-name: slide-in;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-in {
+          from {
+            transform: translateY(-100%);
+          }
+
+          to {
+            transform: translateY(0%);
+          }
+        }
+
+        .slide-out {
+          animation-name: slide-out;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-out {
+          from {
+            transform: translateY(0%);
+          }
+
+          to {
+            transform: translateY(-100%);
+          }
+        }
+      }
+    </style>
   
   </head>
   <body class="bg-gray-100">
-    <!-- <header
-      class="bg-[#2A3D19] py-4 px-4 md:px-12 flex justify-between items-center overflow-clip"
+
+
+    
+    <!-- Live Header -->
+
+    <header
+      class="bg-[#2A3D19] px-4 md:pr-0 py-0 flex justify-between items-center z-30 relative"
     >
-    <div class="w-2/3 md:w-1/2 relative">
-      <input
-        type="text"
-        placeholder="Type here to search"
-        class="inline-block w-full text-green-600 placeholder:text-green-700 rounded-md py-1 px-2"
+      <img
+        src="images/thrive-logo.png"
+        alt="logo"
+        class="w-16 h-16 object-fit -translate-y-[5px] -translate-x-[10px]"
       />
-
-      <img src="images/Search Icon.png" alt="search icon" class="w-4 h-4 absolute top-2 right-4">
-    </div>
-      
-      <div class="flex gap-2 items-center md:hidden">
-        <img
-          src="images/community-light-sm.png"
-          alt="profile-light"
-          class="w-4 h-4"
-        />
-        <img
-          src="images/profile-image.png"
-          alt="profile-image"
-          class="w-6 h-6"
-        />
-      </div>
-      <ul class="hidden md:flex gap-4 text-white text-sm">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Community</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
-    </header> -->
-
-    <!-- General Header -->
-
-    <header id="header" class="bg-[#2A3D19] flex justify-between px-8">
-      <div id="thriveLogo" class="inline-block w-14 h-14">
-        <img
-          src="images/thrive-logo.png"
-          alt="Thrive logo"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div>
-        <ul class="flex space-x-6 pt-4 text-slate-100">
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">
-            <a href="https://about-us-swart.vercel.app/">About</a>
+      <nav>
+        <div class="md:hidden">
+          <img
+            src="images/hamburger.png"
+            alt="hamburger"
+            class="w-8 h-8 block"
+            id="openMenu"
+          />
+          <img
+            src="images/close-menu.png"
+            alt="close-menu"
+            class="w-8 h-8 hidden"
+            id="closeMenu"
+          />
+        </div>
+        <ul class="hidden md:flex text-slate-100">
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Home</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="https://my-tiidelab-repo-ge9z-tijesurejoice.vercel.app/"
-              >Therapy</a
-            >
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">About</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="index.html">Community</a>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Therapy</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="https://sign-up-thrive.vercel.app/">Sign up</a>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Community</a>
           </li>
-          <li class="cursor-pointer">
-            <span class="searchIcon"
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffffff"
-              ></i
-            ></span>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Sign Up</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
+    <ul
+      id="mobileMenu"
+      class="bg-gray-50 text-[#2A3D19] py-4 transform -translate-y-[100%] left-0 w-full absolute hidden z-20"
+    >
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Therapy</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Community</a
+        >
+      </li>
+      <li>
+        <a href="" class="block pt-4 text-center text-lg font-semibold"
+          >Sign Up</a
+        >
+      </li>
+    </ul>
 
-    <!-- End of Header -->
+    <!-- End of Live Header -->
+
     <section class="px-4">
       <div
         class="bg-white my-4 flex flex-wrap justify-between gap-1 py-2 px-2 rounded-md md:hidden"

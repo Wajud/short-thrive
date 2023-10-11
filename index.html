@@ -19,76 +19,127 @@
         .clipPathDesktop {
           clip-path: polygon(49% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
         }
+
+        .slide-in {
+          animation-name: slide-in;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-in {
+          from {
+            transform: translateY(-100%);
+          }
+
+          to {
+            transform: translateY(0%);
+          }
+        }
+
+        .slide-out {
+          animation-name: slide-out;
+          animation-duration: 1s;
+          animation-fill-mode: backwards;
+        }
+
+        @keyframes slide-out {
+          from {
+            transform: translateY(0%);
+          }
+
+          to {
+            transform: translateY(-100%);
+          }
+        }
       }
     </style>
+    <script src="main.js" defer></script>
   </head>
   <body class="bg-gray-50">
-    <!-- <header class="py-2 bg-[#2A3D19]">
-      <div class="flex justify-between items-center px-4 md:hidden">
-        <img src="images/Chevron Left.png" alt="" class="w-[16px] h-[12px]" />
-        <img src="images/Menu.png" alt="" class="w-[16px] h-[18px]" />
-      </div>
+    <!-- Live Header -->
 
-      <div class="hidden md:flex gap-4 px-16 justify-end items-center">
-        <ul class="text-white flex justify-between gap-4">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li>
-            <a
-              href="https://my-tiidelab-repo-ge9z-git-main-tijesurejoice.vercel.app/"
-              >Therapy</a
-            >
-          </li>
-          <li><a href="communities.html">Community</a></li>
-        </ul>
-        <div
-          class="translate-y-1 rounded-full h-8 w-8 flex justify-center items-center"
-        >
-          <img src="images/desktop-user-profile.png" alt="" />
+    <header
+      class="bg-[#2A3D19] px-4 md:pr-0 py-0 flex justify-between items-center z-30 relative"
+    >
+      <img
+        src="images/thrive-logo.png"
+        alt="logo"
+        class="w-16 h-16 object-fit -translate-y-[5px] -translate-x-[10px]"
+      />
+      <nav>
+        <div class="md:hidden">
+          <img
+            src="images/hamburger.png"
+            alt="hamburger"
+            class="w-8 h-8 block"
+            id="openMenu"
+          />
+          <img
+            src="images/close-menu.png"
+            alt="close-menu"
+            class="w-8 h-8 hidden"
+            id="closeMenu"
+          />
         </div>
-      </div>
-    </header> -->
-
-    <!-- General Header -->
-
-    <header id="header" class="bg-[#2A3D19] flex justify-between px-8">
-      <div id="thriveLogo" class="inline-block w-14 h-14">
-        <img
-          src="images/thrive-logo.png"
-          alt="Thrive logo"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div>
-        <ul class="flex space-x-6 pt-4 text-slate-100">
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">
-            <a href="https://about-us-swart.vercel.app/">About</a>
+        <ul class="hidden md:flex text-slate-100">
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Home</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="https://my-tiidelab-repo-ge9z-tijesurejoice.vercel.app/"
-              >Therapy</a
-            >
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">About</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="communities.html">Community</a>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Therapy</a>
           </li>
-          <li class="cursor-pointer">
-            <a href="https://sign-up-thrive.vercel.app/">Sign up</a>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Community</a>
           </li>
-          <li class="cursor-pointer">
-            <span class="searchIcon"
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffffff"
-              ></i
-            ></span>
+          <li>
+            <a href="" class="block px-4 py-4 font-semibold">Sign Up</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
+    <ul
+      id="mobileMenu"
+      class="bg-gray-50 text-[#2A3D19] py-4 transform -translate-y-[100%] left-0 w-full absolute hidden z-20"
+    >
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Therapy</a
+        >
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-4 text-center text-lg font-semibold border-b border-[#fff]"
+          >Community</a
+        >
+      </li>
+      <li>
+        <a href="" class="block pt-4 text-center text-lg font-semibold"
+          >Sign Up</a
+        >
+      </li>
+    </ul>
 
-    <!-- End of General Header -->
+    <!-- End of Live Header -->
 
     <h1 class="text-[#295700] text-center font-bold text-lg mt-12 mb-4">
       Welcome to Thrive Community
